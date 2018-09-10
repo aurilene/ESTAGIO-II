@@ -8,10 +8,7 @@ from catalogo.models import Category
 # Create your views here.
 
 def index(request):
-	context = {
-		'categories': Category.objects.all()
-	}
-	return render(request,'index.html',context)
+	return render(request,'index.html')
 
 def contact(request):
 	return render(request,'contact.html')
